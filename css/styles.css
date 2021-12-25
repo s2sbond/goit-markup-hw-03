@@ -80,12 +80,27 @@ img {
 /* -------------header styles-------------- */
 
 .header {
-  padding-top: 24;
-  padding-bottom: 25;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+}
+
 .logo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -98,7 +113,20 @@ img {
   color: #000000;
 }
 
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -111,6 +139,15 @@ img {
   color: var(--accent-color);
 }
 
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -139,17 +176,22 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--external-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.87;
   font-weight: 700;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--external-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -159,9 +201,12 @@ img {
 
 /* -------------Наши особенности styles-------- */
 
-/* .feature {
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.feature-list {
+
+/* .feature-list {
 }
 .feature-list-item {
 } */
@@ -171,6 +216,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-list-text {
@@ -181,15 +227,16 @@ img {
 
 /* ------------Чем мы занимаемся styles----- */
 
-/* 
 .product {
-} */
+  padding-bottom: 94px;
+}
 
 .product-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* .product-list {
@@ -203,26 +250,36 @@ img {
 
 .team {
   background-color: var(--ex-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
-/* .team-list {
+.team-list {
 }
 .team-list-item {
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-img {
-} */
+  margin-bottom: 30px;
+}
 
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-list-text {
   font-size: 16px;
@@ -232,17 +289,21 @@ img {
 
 /* ------------Portfolio styles------------ */
 
-/* .portfolio {
-} */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* ------------filter's styles------------- */
 
-/* .filter-list {
+.filter-list {
+  margin-bottom: 34px;
 }
 
-.filter-item {} */
+/* .filter-item {} */
 
 .filter-btn {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -251,6 +312,9 @@ img {
   color: var(--title-color);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
 }
 
 .active,
@@ -262,18 +326,25 @@ img {
 
 /* ------------project styles----------- */
 
-/* .project-list {
+.project-list {
 }
 
 .project-list-item {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  max-width: 370px;
+  margin-bottom: 30px;
 }
+
 .project-list-img {
-} */
+  margin-bottom: 20px;
+}
 
 .project-list-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .project-list-text {
@@ -286,6 +357,8 @@ img {
 
 .footer {
   background-color: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-white {
   color: #ffffff;
