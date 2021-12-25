@@ -80,8 +80,6 @@ img {
 /* -------------header styles-------------- */
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -97,8 +95,8 @@ img {
 
 .logo {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-right: 93px;
 
   font-family: 'Raleway', sans-serif;
